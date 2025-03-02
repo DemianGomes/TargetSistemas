@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TargetSistemas</name>
+    </assembly>
+    <members>
+        <member name="T:TargetSistemas.Controllers.ProcessoSeletivoController">
+            <summary>
+            Controller que contém a resolução dos exercícios do processo seletivo
+            </summary>
+        </member>
+        <member name="M:TargetSistemas.Controllers.ProcessoSeletivoController.Exercicio1">
+            <summary>
+            Exercício 1 - Calcula a soma dos números de 1 até 13
+            </summary>
+            <returns>Retorna a soma final do processamento</returns>
+            <response code="200">Retorna o valor da soma calculada</response>
+        </member>
+        <member name="M:TargetSistemas.Controllers.ProcessoSeletivoController.Exercicio2(System.Int32)">
+            <summary>
+            Exercício 2 - Verifica se um número pertence à sequência de Fibonacci
+            </summary>
+            <param name="numero">Número a ser verificado</param>
+            <returns>Mensagem indicando se o número pertence ou não à sequência</returns>
+            <response code="200">Retorna o resultado da verificação</response>
+            <response code="400">Quando o número informado é negativo</response>
+        </member>
+        <member name="M:TargetSistemas.Controllers.ProcessoSeletivoController.Exercicio3(TargetSistemas.Controllers.FaturamentoMensal)">
+            <summary>
+            Exercício 3 - Calcula estatísticas de faturamento diário usando Json ou XML
+            </summary>
+            <param name="faturamento">Objeto contendo os dados de faturamento diário</param>
+            <returns>Estatísticas calculadas do faturamento</returns>
+            <response code="200">Retorna as estatísticas calculadas</response>
+            <response code="400">Quando a lista de faturamento está vazia ou nula</response>
+        </member>
+        <member name="M:TargetSistemas.Controllers.ProcessoSeletivoController.Exercicio4">
+            <summary>
+            Exercício 4 - Calcula o percentual de representação do faturamento por estado
+            </summary>
+            <returns>Dicionário com os percentuais de cada estado</returns>
+            <response code="200">Retorna os percentuais calculados</response>
+        </member>
+        <member name="M:TargetSistemas.Controllers.ProcessoSeletivoController.Exercicio5(System.String)">
+            <summary>
+            Exercício 5 - Inverte os caracteres de uma string
+            </summary>
+            <param name="texto">Texto a ser invertido</param>
+            <returns>Texto original e sua versão invertida</returns>
+            <response code="200">Retorna o texto original e invertido</response>
+            <response code="400">Quando o texto está vazio ou nulo</response>
+        </member>
+        <member name="T:TargetSistemas.Controllers.FaturamentoMensal">
+            <summary>
+            Classe que representa o faturamento mensal com uma lista de faturamentos diários
+            </summary>
+        </member>
+        <member name="P:TargetSistemas.Controllers.FaturamentoMensal.Rows">
+            <summary>
+            Lista de registros de faturamento diário
+            </summary>
+        </member>
+        <member name="T:TargetSistemas.Controllers.FaturamentoDiario">
+            <summary>
+            Classe que representa um registro de faturamento diário
+            </summary>
+        </member>
+        <member name="P:TargetSistemas.Controllers.FaturamentoDiario.Dia">
+            <summary>
+            Dia do mês
+            </summary>
+        </member>
+        <member name="P:TargetSistemas.Controllers.FaturamentoDiario.Valor">
+            <summary>
+            Valor do faturamento no dia
+            </summary>
+        </member>
+    </members>
+</doc>
